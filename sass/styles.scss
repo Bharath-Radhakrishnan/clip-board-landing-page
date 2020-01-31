@@ -1,1 +1,65 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
+ $strong-cyan: hsl(171, 66%, 44%);
+ $light-blue: hsl(233, 100%, 69%);
+ $dark-grayish-blue: hsl(210, 10%, 33%);
+ $grayish-blue: hsl(201, 11%, 66%);
+
+body{
+  font-family: 'Bai Jamjuree', sans-serif;
+
+}
+.logo{
+  font-size: 10rem !important;
+  color:$strong_cyan;
+}
+.title-content{
+  padding-top: 120px;
+}
+.header{
+  background-image: url("../images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+}
+@media(max-width:376px){
+  .header{
+    background-image: url("../images/bg-header-mobile.png");
+  }
+}
+.container-fluid{
+  text-align: center;
+}
+.btn{
+  border:0px;
+  border-radius:60px !important;
+}
+.btn-ios{
+  background-color: $strong-cyan;
+}
+.btn-mac{
+  background-color: $light-blue;
+}
+// keep track
+
+.img-computer{
+   position: relative;
+   left: -50px;
+   top:50px;
+}
+@media(max-width:576px){
+  .img-computer{
+    position: static;
+    left: 0;
+    top: 0;
+    text-align: center;
+  }
+}
+.kt-text{
+  padding:0 100px;
+  text-align: left;
+}
+.sub-title-content{
+  margin-top: 60px;
+
+  h4{
+    font-family: 'Bai Jamjuree semi-bold', sans-serif;
+  }
+}
